@@ -1,0 +1,9 @@
+services:
+  web:
+   image: nginx
+   container_name: servidor-web
+   ports:
+     - 8080:80
+   volumes:
+     - './site:/usr/share/nginx/html'
+
